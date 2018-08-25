@@ -1,5 +1,5 @@
 /**
- * @author Moquo (Moritz Maier)
+ * @author Moquo (Moritz Maier) and kksgandhi (Kutub Gandhi)
  */
 
 // Get the configuration
@@ -14,7 +14,7 @@ const client = new Discord.Client();
 // On ready
 client.on('ready', () => {
     console.log('Ready.');
-    client.user.setGame('https://github.com/Moquo/discord-reaction-bot')
+    //client.user.setGame('https://github.com/Moquo/discord-reaction-bot')
 });
 
 // On message
@@ -23,6 +23,7 @@ client.on('message', (msg) => {
     if(msg.author.bot) return;
 
     // Check if information command was called
+		/*
     if(msg.content === 'reaction-bot') {
         msg.channel.send({
             embed: {
@@ -38,10 +39,12 @@ client.on('message', (msg) => {
         });
         return;
     }
+		*/
 
     // React to the message
-    if(config.rankCheck.enabled && !(msg.member.roles.some(role => config.rankCheck.roles.includes(role.name)))) return;
-    msg.react(config.react_emoji);
+    //if(config.rankCheck.enabled && !(msg.member.roles.some(role => config.rankCheck.roles.includes(role.name)))) return;
+    //msg.react(config.react_emoji);
+    msg.react("480854406263472138");
 });
 
 // Login with bot token

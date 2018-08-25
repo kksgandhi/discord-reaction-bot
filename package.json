@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/Moquo/discord-reaction-bot#readme",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.4.2"
   }
 }
