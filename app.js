@@ -19,7 +19,8 @@ client.on('ready', () => {
 // On message
 client.on('message', (msg) => {
     msg.react("480854406263472138");
-    msg.react("💩");
+    msg.react("🙄");
+    msg.react("😐");
 });
 
 // Login with bot token
