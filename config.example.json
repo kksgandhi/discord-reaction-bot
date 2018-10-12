@@ -1,8 +1,9 @@
 {
-    "token": "TOKEN",
-    "react_emoji": "🐙",
+    "token": "",
+    "react_emoji": "🙄",
+		"react_emoji2":"480854406263472138",
     "rankCheck": {
-        "enabled": true,
+        "enabled": false,
         "roles": [
             "React"
         ]

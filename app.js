@@ -17,10 +17,17 @@ client.on('ready', () => {
 });
 
 // On message
+var urlRegex = /((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)(.*)?(#[\w\-]+)?/;
 client.on('message', (msg) => {
-    msg.react("480854406263472138");
-    msg.react("🙄");
-    msg.react("😐");
+		hasAttachment = msg.attachments.size > 0;
+		hasUrl        = msg.content.match(urlRegex) != null;
+
+		console.log(hasAttachment || hasUrl);
+		if(hasAttachment || hasUrl){
+			msg.react(config.react_emoji);
+			msg.react(config.react_emoji2);
+		}
+    //msg.react("😐");
 });
 
 // Login with bot token

@@ -1,2 +1,3 @@
 # discord-reaction-bot
-Discord bot which adds reactions to messages
+Discord Bot that reacts to messages with images or links
+Type \:emojiName: into a discord chat to get the emoji or emoji ID you need
